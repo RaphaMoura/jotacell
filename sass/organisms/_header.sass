@@ -1,0 +1,92 @@
+header 
+    font-family: 'Open Sans', sans-serif
+    +clearfix 
+    min-height: 700px
+    //Colocando backGR (JA ACABADO)
+    background: 
+        image: url('../imagens/topo.png')
+        position: bottom
+        repeat: no-repeat
+        //attachment: fixed     
+        size: cover
+        margin-top: -60px
+        width: 80%
+        padding: 8em 3em
+    //POSITION LOGO    
+    .logo
+        float: left
+        display: block
+    //TEEL TOPO  
+    .tell
+        h4
+            text-transform: uppercase
+            color: $branco 
+            display: block  
+    //INLINEBLOCK LOGO,TELL        
+    .logo
+        float: left
+    .tell,
+    .logo
+        display: inline-block
+    //CAMADA TEXTO ANTES DO BOTAO    
+    .antboton    
+        h2 
+            clear: both
+            text-transform: uppercase
+            color: $branco  
+            font-size: 25px
+            margin: 300px 160px 5px
+            display: block
+            +breakpoint($celular)
+                font-size: 15px 
+            @media (max-width: 480px)
+                margin: 250px 60px 5px
+            @media (max-width: 991px)
+                margin: 250px 90px 5px    
+                
+        h1    
+            clear: both
+            text-transform: uppercase
+            color: $branco 
+            font-size: 30px
+            margin: -9px 86px 5px
+            display: block
+            +breakpoint($celular)
+                font-size: 15px 
+            @media (max-width: 480px)
+                margin: -9px 35px 5px 
+            @media (max-width: 991px)
+                margin: -9px 75px 5px     
+                    
+                
+        p
+            clear: both
+            text-transform: uppercase
+            color: $branco 
+            font-size: 20px
+            margin: -15px 110px 5px
+            display: block  
+            +breakpoint($celular)
+                font-size: 10px
+            @media (max-width: 480px)
+                margin: -9px 45px 5px
+            @media (max-width: 991px)
+                margin: -9px 80px 5px       
+                       
+                
+    .celularleft img
+            //margin-left: 1000px
+            float: left
+            margin: -280px 1300px 5px
+            display: table
+            clear: both
+            +breakpoint($celular)
+                display: none
+            +breakpoint($tablet)
+                dispay: none
+    .boton
+            margin: -10px 215px 5px
+            @media (max-width: 480px)
+                margin: -0px 65px 5px
+            @media (max-width: 991px)
+                margin: -0px 80px 5px
